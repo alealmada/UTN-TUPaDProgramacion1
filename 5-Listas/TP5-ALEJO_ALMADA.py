@@ -186,12 +186,49 @@
 # 6) Dada una lista con 7 números, rotar todos los elementos una posición hacia la derecha (el
 # último pasa a ser el primero).
 
-lista_numeros = [1, 2, 3, 4, 5, 6, 7]
+# lista_numeros = [1, 2, 3, 4, 5, 6, 7]
 
-ultimo = lista_numeros[-1]     #GUARDAMOS EL ULTIMO ELEMENTO
-#CREAMOS UN FOR QUE RECORRE DESDE EL PRIMER AL ULTIMO        
-for i in range(len(lista_numeros)-1, 0, -1):  
-    lista_numeros[i] = lista_numeros[i-1]     #ITERAMOS Y MOVEMOS UNO A LA DERECHA
-lista_numeros[0] = ultimo             
+# ultimo = lista_numeros[-1]     #GUARDAMOS EL ULTIMO ELEMENTO
+# #CREAMOS UN FOR QUE RECORRE DESDE EL PRIMER AL ULTIMO        
+# for i in range(len(lista_numeros)-1, 0, -1):  
+#     lista_numeros[i] = lista_numeros[i-1]     #ITERAMOS Y MOVEMOS UNO A LA DERECHA
+# lista_numeros[0] = ultimo             
 
-print(lista_numeros)
+# print(lista_numeros)
+
+# Crear una matriz (lista anidada) de 7x2 con las temperaturas mínimas y máximas de una
+# semana.
+# • Calcular el promedio de las mínimas y el de las máximas.
+# • Mostrar en qué día se registró la mayor amplitud térmica.
+
+# temperaturas_semanales =[
+# [1,4],
+# [6,8],
+# [2,8],
+# [6,7],
+# [1,12],
+# [1,10],
+# [3,20],
+#  ] 
+
+# print(temperaturas_semanales)
+
+# promedio_minimas = 0
+# suma_minimas = 0
+
+# promedio_maximas = 0
+# suma_maximas = 0
+# for i in range(7):
+#     suma_minimas += temperaturas_semanales [i][0]
+#     suma_maximas += temperaturas_semanales [i][1]
+# promedio_minimas = suma_minimas / 7   
+# promedio_maximas = suma_maximas / 7 
+# print(f"El promedio de las temperaturas minimas es: {promedio_minimas}")
+# print(f"El promedio de las temperaturas maxima es: {promedio_maximas}")
+
+
+# 8) Crear una matriz con las notas de 5 estudiantes en 3 materias.
+# • Mostrar el promedio de cada estudiante.
+# • Mostrar el promedio de cada materia.
+
+
