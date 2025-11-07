@@ -1,3 +1,6 @@
-Regla
-
-Cartuchera
+nombre
+precio
+cantidad
+o,300.0,15
+Goma,80.0,50
+Lapiz, 15.5, 30
