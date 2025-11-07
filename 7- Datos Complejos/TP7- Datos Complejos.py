@@ -97,9 +97,21 @@
 
 stock_almacen = {"Leche" : 12, "Queso" : 1, "Pan" : 3, "Gaseosa" : 0}
 
-opcion = input("Ingrese 1 para consultar el stock, 2 para agregar unidades o 3 agregar un nuevo producto si no existe")
+opcion = int(input("Ingrese 1 para consultar el stock, 2 para agregar unidades o 3 agregar un nuevo producto si no existe: "))
 
-if opcion == 1:
-    producto = input("Sobre cual producto quiere consultar?: ")
-    producto = producto.lower()
-    print(stock_almacen.key[producto])
+match opcion: 
+    case 1:
+        producto = input("Sobre cual producto quiere consultar?: ")
+        print(f"El stock es: {stock_almacen[producto]}")
+
+    case 2:
+        producto = input("Sobre cual producto quie modificar el stock?: ")
+        cantidad_nueva = int(input("Cual es el nuevo valor?: "))
+        if producto in stock_almacen:
+            stock_almacen[producto] += cantidad_nueva
+    case 3:
+        nuevo_producto = input("Cual es el nuevo producto que desea agregar?: ")
+        cantidad_nueva = int(input("Cual es su stock?: "))
+        stock_almacen[nuevo_producto] = cantidad_nueva
+    
+print(stock_almacen)
